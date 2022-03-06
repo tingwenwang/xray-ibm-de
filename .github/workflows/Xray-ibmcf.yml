@@ -49,7 +49,6 @@ jobs:
         unzip latest-v2ray.zip v2ray geoip.dat geosite.dat
         rm latest-v2ray.zip
         chmod -v 755 v2*
-        ./v2ray -version
         mv v2ray ${IBM_CF_APP_NAME}
 
     - name: Generate Xray Config File (VMess)
